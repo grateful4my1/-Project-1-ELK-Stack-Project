@@ -1,8 +1,8 @@
 ## Automated ELK Stack Deployment
 The files in this repository were used to configure the network depicted below.
-![NetworkDiagram](Images/Project1Network2.PNG)
+!
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the YAML file may be used to install only certain pieces of it, such as Filebeat.
-- [install_elk.yml](Playbooks/install_elk.yml)
+- 
 This document contains the following details:
 - Description of the Topology
 - Access Policies
@@ -19,7 +19,7 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 - **Filebeat**  - collects data about the file system
 - **Metricbeat** - collects machine metrics, such as uptime
 The configuration details of each machine may be found below.
-_Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
+
 | Name                 | Function   | IP Address | Operating System |
 |----------------------|------------|------------|------------------|
 | Jump-Box-Provisioner | Gateway    | 10.0.0.4   | Linux            |
@@ -31,10 +31,10 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 The machines on the internal network are not exposed to the public Internet. 
 
 Only the **jumpbox** machine can accept connections from the Internet. Access to this machine is only allowed from the following IP address: **## Automated ELK Stack Deployment
-The files in this repository were used to configure the network depicted below.
-![NetworkDiagram](Images/Project1Network2.PNG)
+The files in this repository were used to configure the network image.
+
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the YAML file may be used to install only certain pieces of it, such as Filebeat.
-- [install_elk.yml](Playbooks/install_elk.yml)
+- install_elk.yml
 This document contains the following details:
 - Description of the Topology
 - Access Policies
@@ -72,8 +72,8 @@ The playbook implements the following tasks:
 - Install Docker python module
 - Increase virtual memory
 - Download and launch a docker
-The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
-![dockerps](Images/dockerps.PNG)
+The screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
+
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
 - Web 1: 10.0.0.6 
@@ -88,7 +88,7 @@ These Beats allow us to collect the following information from each machine:
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 SSH into the control node and follow the steps below:
 - Copy the **playbook** file to **Ansible Control Node**.
--  Playbooks for Filebeat and Mtricbeat are also here: [filebeat-playbook.yml](Playbooks/filebeat-playbook.yml) & [metricbeat-playbook.yml](Playbooks/metricbeat-playbook.yml)
+-  Playbooks for Filebeat and Mtricbeat are also here: [filebeat.yml] & [metricbeat.yml
 ```
 $ cd /etc/ansible
 $ mkdir files
@@ -138,8 +138,8 @@ The playbook implements the following tasks:
 - Install Docker python module
 - Increase virtual memory
 - Download and launch a docker
-The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
-![dockerps](Images/dockerps.PNG)
+The screenshot located in images displays the result of running `docker ps` after successfully configuring the ELK instance.
+
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
 - Web 1: 10.0.0.6
@@ -204,9 +204,9 @@ The playbook implements the following tasks:
 - Install Docker python module
 - Increase virtual memory
 - Download and launch a docker
-The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
-![dockerps](Images/dockerps.PNG)
-### Target Machines & Beats
+The screenshot located in images displays the result of running `docker ps` after successfully configuring the ELK instance.
+
+### Target Machines & Beat
 This ELK server is configured to monitor the following machines:
 - Web 1: 10.0.0.6
 - Web 2: 10.0.0.7 
@@ -220,7 +220,7 @@ These Beats allow us to collect the following information from each machine:
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 SSH into the control node and follow the steps below:
 - Copy the **playbook** file to **Ansible Control Node**.
--  Playbooks for Filebeat and Mtricbeat are also here: [filebeat-playbook.yml](Playbooks/filebeat-playbook.yml) & [metricbeat-playbook.yml](Playbooks/metricbeat-playbook.yml)
+-  Playbooks for Filebeat and Mtricbeat are also here: [filebeat-playbook.yml](Playbooks & [metricbeat-playbook.yml](Playbooks/metricbeat-playbook.yml)
 ```
 $ cd /etc/ansible
 $ mkdir files
